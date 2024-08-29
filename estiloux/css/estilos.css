@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +7,7 @@
 body {
     background-color: aliceblue;
 }
+
 header {
     background-color: #727272;
 }
@@ -23,16 +24,21 @@ h1 {
     height: 100%;
     max-width: 992px;
     margin: 0 auto;
-    border: 3px solid rgb(255, 0, 225);
+   /* border: 3px solid rgb(255, 0, 225);*/
 
+}
     nav {
+    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 400px;
         height: 100%;
-        border: 3px solid rgb(255, 0, 179);
+        /*border: 3px solid rgb(255, 0, 179);*/
     }
 
-    .header-flex{
-    display: flex;
-    justify-content: space-between;
-    }
-}
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
