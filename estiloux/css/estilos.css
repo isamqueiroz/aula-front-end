@@ -4,19 +4,54 @@
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    border: 2px solid rgb(241, 212, 217)
-}
+html,
 body {
-    background-color: aliceblue;
-    border: 2px solid rgb(234, 187, 255);
+    height: 100%;
+    /* border: 2px solid #FFDACC */
 }
 
-header, footer {
-    background-color: #cacaf9;
+body {
+    background-color: #FFDACC;
+    /* border: 2px solid #93401F; */
+}
+
+/******************** HEADER *********************/
+header,
+footer {
+    background-color: #4D1600;
     width: 100%;
     height: 10%;
+    color: #ffffff;
+}
+
+/* caixa para centralizar o conteúdo */
+.layout-grid {
+    width: 100%;
+    height: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    /* border: 3px solid rgb(255, 0, 225);*/
+
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*ze: 26px;
+font-weight: 100;
+color: white;
+border: 3px solid white; */
+
+.ux {
+    font-size: 30px;
+    margin-left: 3px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: cursive;
 }
 
 h1 {
@@ -24,6 +59,15 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
     font-weight: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 400px;
+    /*border: 3px solid rgb(255, 0, 179);*/
 }
 
 nav a {
@@ -34,14 +78,14 @@ nav a {
     /*border: 2px solid rgb(255, 255, 255);*/
     width: 100%;
     height: 80%;
-    color: aliceblue;
+    color: rgb(215, 215, 216);
     text-decoration: none;
     font-family: Verdana, sans-serif;
     transition: background-color 0.4s, margin-left 0.8s, margin-buttom 0.8s, border-radius 0.4s;
-    
+
 }
 
-nav a:hover{
+nav a:hover {
     color: #e8e8e8;
     text-decoration: underline;
     font-size: oblique;
@@ -49,85 +93,131 @@ nav a:hover{
     margin-bottom: 10px;
     border-radius: 17px;
     background-color: rgba(232, 232, 232, 0.5);
-    
- 
+
+
 }
 
-.layout-grid {
+/******************** Main *********************/
+main {
+    width: 100%;
+    height: 600px;
+    /* border: 3px solid pink; */
+
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     width: 100%;
     height: 100%;
-    max-width: 992px;
-    margin: 0 auto;
-   /* border: 3px solid rgb(255, 0, 225);*/
 
-}
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        width: 400px;
-        /*border: 3px solid rgb(255, 0, 179);*/
-    }
-
-    .ux {
-        font-size: 30px;
-        margin-left: 3px ;
-        font-style: italic;
-        font-weight: 500 ;
-        font-family: cursive;
-    }
-
-    .header-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    main{
-        width: 100%;
-        height: 800px;
-        border: 3px solid pink;
-
-    }
-    .main-flex{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        width: 100%;
-        height: 100%;
-
-        background-color: aliceblue;
-        border: 2px solid pink;
+    background-color: #FFDACC;
+    /* border: 2px solid pink; */
 }
 
-.harmonia{
-    border: 2px solid pink;
-    height: 500px;
-    width: 750px;
-    background-color: #cacaf9;
-    
+.harmonia {
+    /* border: 2px solid #93401F; */
+    height: 95%;
+    width: 700px;
+    background-color: #ffffff;
+
+}
+
+.harmonia h2{
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #a8a8a8;
+}
+.harmonia p{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #a8a8a8;
+}
+
+.harmonia img{
+    width: 100%;
 }
 
 .aside {
-        height: 500px;
-        width: 200px;
-        border: 2px solid pink;
-        background-color: #cacaf9;
-    
-    }
-    
-    section{
-        border: 2px solid pink;
-        height: 500px;
-        width: 750px;
-    
-        
-    }
+    height: 95%;
+    width: 250px;
+    /* border: 2px solid #4D1600; */
+    background-color: #571901;
 
-    aside{
-        height: 100%;
-        width: 250px;
-        border: 2px solid rgb(164, 4, 31);
+}
+
+section {
+    /* border: 2px solid pink; */
+    height: 500px;
+    width: 750px;
+
+
+}
+
+aside {
+    /* border: 2px solid rgb(164, 4, 31); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    align-items: stretch;
+    
+}
+
+aside article h3{
+    width: 100%;
+    color: #a8a8a8;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #a8a8a8;
+    
+}
+aside, article{
+    background-color: #ffffff;
+   
+}
+
+aside .buscar-box{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+
+aside article input,
+ aside article button{
+     height: 25px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border: 1px solid #a8a8a8;
+     
+    }
+    
+    
+    aside article button{
+        width: 30px;
+        background-color: #727272;
+        color: white;
+        border: none;
+        /* border: 1px solid #727272;   */
+        cursor: pointer;
+    }
+    
+    aside article input{
+        border: 1px solid #727272;
+        outline: none;
+        padding-right: 5px;
+        padding-left: 5px;
+
     }
